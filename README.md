@@ -52,4 +52,4 @@ with the following layers
 
 ## Interpreting model predictions
 
-![Predictions](https://i.imgur.com/GQ3o2ks.png)
+![Predictions](https://i.imgur.com/1ZHuIbs.png)
