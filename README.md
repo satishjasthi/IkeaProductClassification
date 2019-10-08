@@ -14,6 +14,6 @@ This project has data scraped from IKEA on four different classes:
 ![Candle Holders](https://i.imgur.com/MUkcW3a.png)
 
 - **Wardrobes**
-![Wardrobes](https://i.imgur.com/H0ChqED.png)
+![Wardrobes](https://i.imgur.com/OPx8SNS.png)
 
 
