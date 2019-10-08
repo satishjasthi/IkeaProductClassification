@@ -37,6 +37,7 @@ cost almost equivalent to ResNet based equivalent architecture
 
 ### Model specifications
 - ResNext_50(R50) pretrained is used as a classifier.
+- Model is defined and trained using src/ResNext_50.ipynb
 - For transfer learning, the ImageNet specific FC layer of the R50 is removed and replaced
 with the following layers 
     - AdaptiveAvgPool2d
@@ -50,6 +51,10 @@ with the following layers
     - Dropout(p=0.5)
     - FC(4 units)
 - R50 is trained for 20 epochs using one cycle learning rate policy
+
+## Train model on IKEA data
+- To train the model use src/ResNext_50.ipynb notebook
+- If you are unable to see the notebook in github, you can open it in colab [here](https://colab.research.google.com/drive/1ehv7IZ46BqrZgVjZGvJdN9qad_RAVCHo)
 
 ## Training and Validation loss
 ![Training and Validation loss](https://i.imgur.com/8NPrwwM.png)
@@ -67,5 +72,7 @@ sofa convertable to bed and it also shares lot of common features from chairs cl
 - In second prediction, model is predicting as wardrobe because of the 
 background in the image which do have a mini shelf structure similar to wardrobe.
 
- 
+## Model weights
+Model weights are saved to data/models dir when model.save('model_name'') is performed
+in src/ResNext_50.ipynb
 
