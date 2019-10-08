@@ -1,5 +1,5 @@
 # IkeaProductClassification
-Project to classify product categories from IKEA product categories.
+Project to identify products from IKEA product categories.
 
 This project has data scraped from IKEA on four different classes:
 
