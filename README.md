@@ -6,7 +6,6 @@ Project to identify products from IKEA product categories.
 - This project has data scraped from IKEA on four different classes:
 
     - **Chairs**
-    
     ![Chairs](https://i.imgur.com/Aa1D8ME.png)
     
     - **Beds**
