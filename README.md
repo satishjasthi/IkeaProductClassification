@@ -29,6 +29,13 @@ google images were downloaded using [Download all Images](https://chrome.google.
 validation data has atleast 40 samples per each class
 
 ## Training a multi-class classifier
+### Why ResNext_50?
+- In general ResNet based architectures are found to generalise better
+on custom datasets.
+- ResNext based architecture has a higher model capacity at parameter
+cost almost equivalent to ResNet based equivalent architecture
+
+### Model specifications
 - ResNext_50(R50) pretrained is used as a classifier.
 - For transfer learning, the ImageNet specific FC layer of the R50 is removed and replaced
 with the following layers 
@@ -53,3 +60,12 @@ with the following layers
 ## Interpreting model predictions
 
 ![Predictions](https://i.imgur.com/1ZHuIbs.png)
+
+As it can be clearly seen the first and second are wrong predictions. 
+- However, in the first example even though the actual label is **Bed** it looks like a
+sofa convertable to bed and it also shares lot of common features from chairs class.
+- In second prediction, model is predicting as wardrobe because of the 
+background in the image which do have a mini shelf structure similar to wardrobe.
+
+ 
+
