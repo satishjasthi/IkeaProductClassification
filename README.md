@@ -31,15 +31,15 @@ validation data has atleast 40 samples per each class
 ## Requirements
 - **fastai** library, you can install it with pip
 
-        `pip install fastai`
+     `pip install fastai`
         
 - **Python3.6**
 - Selenium
 - All dependencies can be installed by running
     
-        `pip install -r requirements.txt`
+     `pip install -r requirements.txt`
 
-## Data preprocessing
+### Data preprocessing
 - Images are standardized by using ImageNet data mean and standard deviations.
 
 ### Data Augmentations used
