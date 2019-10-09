@@ -2,12 +2,6 @@
 Project to identify products from IKEA product categories.
 
 ## Requirements
-- **fastai** library, you can install it with pip
-
-     `pip install fastai`
-        
-- **Python3.6**
-- Selenium
 - All dependencies can be installed by running
     
      `pip install -r requirements.txt`
