@@ -28,6 +28,13 @@ google images were downloaded using [Download all Images](https://chrome.google.
 - Scrapped data is split into train and validation datasets where
 validation data has atleast 40 samples per each class
 
+### Data Augmentations used
+- random_flip: with p=0.5
+- rotate: between -10 to 10 degrees
+- zoom
+- lightning variations
+- wrapping
+
 ## Training a multi-class classifier
 ### Why ResNext_50?
 - In general ResNet based architectures are found to generalise better
