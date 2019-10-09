@@ -28,6 +28,20 @@ google images were downloaded using [Download all Images](https://chrome.google.
 - Scrapped data is split into train and validation datasets where
 validation data has atleast 40 samples per each class
 
+## Requirements
+- **fastai** library, you can install it with pip
+
+        `pip install fastai`
+        
+- **Python3.6**
+- Selenium
+- All dependencies can be installed by running
+    
+        `pip install -r requirements.txt`
+
+## Data preprocessing
+- Images are standardized by using ImageNet data mean and standard deviations.
+
 ### Data Augmentations used
 - random_flip: with p=0.5
 - rotate: between -10 to 10 degrees
@@ -74,10 +88,21 @@ with the following layers
 ![Predictions](https://i.imgur.com/1ZHuIbs.png)
 
 As it can be clearly seen the first and second are wrong predictions. 
-- However, in the first example even though the actual label is **Bed** it looks like a
-sofa convertable to bed and it also shares lot of common features from chairs class.
+- However, in the first example even though the actual label is **Bed** model predicts it as charis
+ because this product looks like a sofa, convertable to bed and it also shares lot of common 
+ features with chairs class.
+
+<p align="center"> 
+<img src="https://i.imgur.com/tz6fen2.png">
+</p>
+
 - In second prediction, model is predicting as wardrobe because of the 
 background in the image which do have a mini shelf structure similar to wardrobe.
+
+<p align="center"> 
+<img src="https://i.imgur.com/b1MdWma.png">
+</p>
+
 
 ## Model weights
 Model weights are saved to data/models dir when model.save('model_name'') is performed
