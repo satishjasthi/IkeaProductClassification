@@ -1,6 +1,17 @@
 # IkeaProductClassification
 Project to identify products from IKEA product categories.
 
+## Requirements
+- **fastai** library, you can install it with pip
+
+     `pip install fastai`
+        
+- **Python3.6**
+- Selenium
+- All dependencies can be installed by running
+    
+     `pip install -r requirements.txt`
+
 ## Data
 
 - This project has data scraped from IKEA on four different classes:
@@ -27,17 +38,6 @@ google images were downloaded using [Download all Images](https://chrome.google.
  chrome extension).
 - Scrapped data is split into train and validation datasets where
 validation data has atleast 40 samples per each class
-
-## Requirements
-- **fastai** library, you can install it with pip
-
-     `pip install fastai`
-        
-- **Python3.6**
-- Selenium
-- All dependencies can be installed by running
-    
-     `pip install -r requirements.txt`
 
 ### Data preprocessing
 - Images are standardized by using ImageNet data mean and standard deviations.
