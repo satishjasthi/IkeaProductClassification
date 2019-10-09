@@ -99,6 +99,6 @@ background in the image which do have a mini shelf structure similar to wardrobe
 
 
 ## Model weights
-Model weights are saved to data/models dir when model.save('model_name'') is performed
+Model weights are saved to data/model_data/models dir when model.save('model_name'') is performed
 in src/ResNext_50.ipynb
 
